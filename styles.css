@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    hyphens: auto;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 1em;
+    color: #4d4e53;
+    line-height: 1.5;
+}
+
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 0.85em 0;
+    color: black;
+}
+
+p {
+    margin: 1em 0 1em 1em;
+}
+
+li {
+    margin: 1em 0;
+}
+
+.code {
+    width: 60%;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-left: 3em;
+    padding: 0.5em 2em;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.menu {
+    overflow-y: auto;
+    height: 85.3%;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: block;
+    color: #4d4e53;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    padding: 0.75em 0;
+    padding-left: 2em;
+    border-top: 1px solid #000;
+}
+
+nav {
+    min-width: 320px;
+    height: 100%;
+    border-right: 2px solid #4d4e53;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+}
+
+main {
+    margin-right: 1em;
+    margin-left: 21em;
+    margin-bottom: 7em;
+}
+
+nav > header {
+    padding-left: 1.1em;
+}
+
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+    }
+
+    nav {
+        position: sticky;
+        background-color: #FFF;
+    }
+
+    .menu {
+        height: 200px;
+        border-bottom: 1px solid black;
+    }
+
+    main {
+        margin-left: 1em;
+    }
+    
+    header {
+        margin: 0.3em 0;
+        font-size: 1.35rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.5em 0;
+        padding-left: 2em;
+    }
+}
